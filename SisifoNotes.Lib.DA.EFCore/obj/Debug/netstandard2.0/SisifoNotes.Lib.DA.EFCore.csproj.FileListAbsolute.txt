@@ -1,0 +1,5 @@
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.deps.json
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.csproj.CoreCompileInputs.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.AssemblyInfoInputs.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.AssemblyInfo.cs

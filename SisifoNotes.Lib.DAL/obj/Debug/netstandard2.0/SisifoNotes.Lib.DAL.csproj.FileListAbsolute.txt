@@ -1,0 +1,12 @@
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\bin\Debug\netstandard2.0\SisifoNotes.Lib.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\obj\Debug\netstandard2.0\SisifoNotes.Lib.DAL.csprojAssemblyReference.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\obj\Debug\netstandard2.0\SisifoNotes.Lib.DAL.csproj.CoreCompileInputs.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\obj\Debug\netstandard2.0\SisifoNotes.Lib.DAL.AssemblyInfoInputs.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\obj\Debug\netstandard2.0\SisifoNotes.Lib.DAL.AssemblyInfo.cs
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\bin\Debug\netstandard2.0\SisifoNotes.Lib.DAL.deps.json
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\bin\Debug\netstandard2.0\SisifoNotes.Lib.DAL.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\bin\Debug\netstandard2.0\SisifoNotes.Lib.DAL.pdb
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\bin\Debug\netstandard2.0\SisifoNotes.Lib.pdb
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\obj\Debug\netstandard2.0\SisifoNotes.Lib.DAL.csproj.CopyComplete
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\obj\Debug\netstandard2.0\SisifoNotes.Lib.DAL.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DAL\obj\Debug\netstandard2.0\SisifoNotes.Lib.DAL.pdb

@@ -1,0 +1,14 @@
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\bin\Debug\netcoreapp2.2\SisifoNotes.Web.deps.json
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\bin\Debug\netcoreapp2.2\SisifoNotes.Web.runtimeconfig.json
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\bin\Debug\netcoreapp2.2\SisifoNotes.Web.runtimeconfig.dev.json
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\bin\Debug\netcoreapp2.2\SisifoNotes.Web.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.csproj.CoreCompileInputs.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.RazorAssemblyInfo.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.RazorAssemblyInfo.cs
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.AssemblyInfoInputs.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.AssemblyInfo.cs
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.RazorTargetAssemblyInfo.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\bin\Debug\netcoreapp2.2\SisifoNotes.Web.pdb
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.pdb
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Web\obj\Debug\netcoreapp2.2\SisifoNotes.Web.csprojAssemblyReference.cache

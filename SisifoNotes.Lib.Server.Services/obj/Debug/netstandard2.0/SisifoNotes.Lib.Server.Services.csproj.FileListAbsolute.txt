@@ -1,0 +1,12 @@
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\bin\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.deps.json
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\bin\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\bin\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.pdb
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\bin\Debug\netstandard2.0\SisifoNotes.Lib.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\bin\Debug\netstandard2.0\SisifoNotes.Lib.pdb
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\obj\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.csprojAssemblyReference.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\obj\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.csproj.CoreCompileInputs.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\obj\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.AssemblyInfoInputs.cache
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\obj\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.AssemblyInfo.cs
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\obj\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.csproj.CopyComplete
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\obj\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.dll
+C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.Server.Services\obj\Debug\netstandard2.0\SisifoNotes.Lib.Server.Services.pdb

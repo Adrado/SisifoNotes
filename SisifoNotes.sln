@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisifoNotes.Web", "SisifoNotes.Web\SisifoNotes.Web.csproj", "{3F441B38-177C-4B93-93B4-ED9B9B3E29F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SisifoNotes.Web", "SisifoNotes.Web\SisifoNotes.Web.csproj", "{3F441B38-177C-4B93-93B4-ED9B9B3E29F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisifoNotes.Lib", "SisifoNotes.Lib\SisifoNotes.Lib.csproj", "{AC02ED61-4528-4484-A15C-090F7EE82EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SisifoNotes.Lib", "SisifoNotes.Lib\SisifoNotes.Lib.csproj", "{AC02ED61-4528-4484-A15C-090F7EE82EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisifoNotes.Lib.DAL", "SisifoNotes.Lib.DAL\SisifoNotes.Lib.DAL.csproj", "{2AF1FE66-D41D-4000-BDC3-88F56286E571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisifoNotes.Lib.Server.Services", "SisifoNotes.Lib.Server.Services\SisifoNotes.Lib.Server.Services.csproj", "{28AFE711-2F1A-4906-B7F8-E33A69BA0B04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisifoNotes.Lib.DA.EFCore", "SisifoNotes.Lib.DA.EFCore\SisifoNotes.Lib.DA.EFCore.csproj", "{3FA73590-0092-4085-B34C-35A3F2AB5AEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{AC02ED61-4528-4484-A15C-090F7EE82EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC02ED61-4528-4484-A15C-090F7EE82EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC02ED61-4528-4484-A15C-090F7EE82EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF1FE66-D41D-4000-BDC3-88F56286E571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF1FE66-D41D-4000-BDC3-88F56286E571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF1FE66-D41D-4000-BDC3-88F56286E571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF1FE66-D41D-4000-BDC3-88F56286E571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28AFE711-2F1A-4906-B7F8-E33A69BA0B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28AFE711-2F1A-4906-B7F8-E33A69BA0B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28AFE711-2F1A-4906-B7F8-E33A69BA0B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28AFE711-2F1A-4906-B7F8-E33A69BA0B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA73590-0092-4085-B34C-35A3F2AB5AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA73590-0092-4085-B34C-35A3F2AB5AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA73590-0092-4085-B34C-35A3F2AB5AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA73590-0092-4085-B34C-35A3F2AB5AEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

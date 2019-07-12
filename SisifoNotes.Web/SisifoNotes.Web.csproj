@@ -24,7 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SisifoNotes.Lib.DA.EFCore\SisifoNotes.Lib.DA.EFCore.csproj" />
+    <ProjectReference Include="..\SisifoNotes.Lib.DAL\SisifoNotes.Lib.DAL.csproj" />
     <ProjectReference Include="..\SisifoNotes.Lib.Server.Services\SisifoNotes.Lib.Server.Services.csproj" />
+    <ProjectReference Include="..\SisifoNotes.Lib\SisifoNotes.Lib.csproj" />
   </ItemGroup>
 
 </Project>

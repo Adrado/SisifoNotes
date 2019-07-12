@@ -32,9 +32,6 @@
         }
       },
       "SisifoNotes.Lib/1.0.0": {
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.2"
-        },
         "runtime": {
           "SisifoNotes.Lib.dll": {}
         }

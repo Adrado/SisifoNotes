@@ -7,3 +7,17 @@ C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\SisifoNot
 C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.dll
 C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.pdb
 C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.csprojAssemblyReference.cache
+C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\SisifoNotes.Lib.deps.json
+C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\SisifoNotes.Lib.dll
+C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\SisifoNotes.Lib.pdb
+C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.csproj.CoreCompileInputs.cache
+C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.AssemblyInfoInputs.cache
+C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.AssemblyInfo.cs
+C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.csproj.CopyComplete
+C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.dll
+C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.pdb
+C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.csprojAssemblyReference.cache
+C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml

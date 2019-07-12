@@ -38,9 +38,6 @@
       "SisifoNotes.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.2"
-        },
         "compile": {
           "bin/placeholder/SisifoNotes.Lib.dll": {}
         },
@@ -244,11 +241,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj",
+      "projectUniqueName": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj",
       "projectName": "SisifoNotes.Lib.DAL",
-      "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj",
+      "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj",
       "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.DAL\\obj\\",
+      "outputPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -273,8 +270,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
-              "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj"
+            "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
+              "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj"
             }
           }
         }

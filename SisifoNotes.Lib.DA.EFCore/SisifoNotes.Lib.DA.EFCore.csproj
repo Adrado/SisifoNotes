@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ModelsDbSets\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SisifoNotes.Lib\SisifoNotes.Lib.csproj" />
   </ItemGroup>
 

@@ -3,3 +3,17 @@ C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0
 C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.csproj.CoreCompileInputs.cache
 C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.AssemblyInfoInputs.cache
 C:\Dev\PrácticaF\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.AssemblyInfo.cs
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.deps.json
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.dll
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.pdb
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\SisifoNotes.Lib.dll
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\SisifoNotes.Lib.pdb
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.csprojAssemblyReference.cache
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.csproj.CoreCompileInputs.cache
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.AssemblyInfoInputs.cache
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.AssemblyInfo.cs
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.csproj.CopyComplete
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.dll
+C:\FDev\SisifoNotes\SisifoNotes.Lib.DA.EFCore\obj\Debug\netstandard2.0\SisifoNotes.Lib.DA.EFCore.pdb

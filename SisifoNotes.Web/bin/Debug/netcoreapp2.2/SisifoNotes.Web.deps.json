@@ -31,7 +31,11 @@
           "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
-          "Newtonsoft.Json": "12.0.2"
+          "Newtonsoft.Json": "12.0.2",
+          "SisifoNotes.Lib": "1.0.0",
+          "SisifoNotes.Lib.DA.EFCore": "1.0.0",
+          "SisifoNotes.Lib.DAL": "1.0.0",
+          "SisifoNotes.Lib.Server.Services": "1.0.0"
         },
         "runtime": {
           "SisifoNotes.Web.dll": {}
@@ -572,6 +576,49 @@
             "assemblyVersion": "4.1.1.0",
             "fileVersion": "4.6.26515.6"
           }
+        }
+      },
+      "SisifoNotes.Lib/1.0.0": {
+        "runtime": {
+          "SisifoNotes.Lib.dll": {}
+        },
+        "compile": {
+          "SisifoNotes.Lib.dll": {}
+        }
+      },
+      "SisifoNotes.Lib.DA.EFCore/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.6",
+          "SisifoNotes.Lib": "1.0.0"
+        },
+        "runtime": {
+          "SisifoNotes.Lib.DA.EFCore.dll": {}
+        },
+        "compile": {
+          "SisifoNotes.Lib.DA.EFCore.dll": {}
+        }
+      },
+      "SisifoNotes.Lib.DAL/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2",
+          "SisifoNotes.Lib": "1.0.0"
+        },
+        "runtime": {
+          "SisifoNotes.Lib.DAL.dll": {}
+        },
+        "compile": {
+          "SisifoNotes.Lib.DAL.dll": {}
+        }
+      },
+      "SisifoNotes.Lib.Server.Services/1.0.0": {
+        "dependencies": {
+          "SisifoNotes.Lib": "1.0.0"
+        },
+        "runtime": {
+          "SisifoNotes.Lib.Server.Services.dll": {}
+        },
+        "compile": {
+          "SisifoNotes.Lib.Server.Services.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3882,6 +3929,26 @@
       "sha512": "sha512-S0wEUiKcLvRlkFUXca8uio1UQ5bYQzYgOmOKtCqaBQC3GR9AJjh43otcM32IGsAyvadFTaAMw9Irm6dS4Evfng==",
       "path": "system.text.encoding.codepages/4.5.0",
       "hashPath": "system.text.encoding.codepages.4.5.0.nupkg.sha512"
+    },
+    "SisifoNotes.Lib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SisifoNotes.Lib.DA.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SisifoNotes.Lib.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SisifoNotes.Lib.Server.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

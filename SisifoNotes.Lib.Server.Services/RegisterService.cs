@@ -1,4 +1,5 @@
-﻿using SisifoNotes.Lib.Core.Interfaces;
+﻿using SisifoNotes.Lib.Core;
+using SisifoNotes.Lib.Core.Interfaces;
 using SisifoNotes.Lib.Models;
 using SisifoNotes.Lib.Services.Dtos;
 using SisifoNotes.Lib.Services.Interfaces;

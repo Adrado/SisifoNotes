@@ -19,5 +19,10 @@ namespace SisifoNotes.Lib.DA.EFCore
 
         public DbSet<Client> Clients { get; set; }
         public DbSet<Note> Notes { get; set; }
+        public DbSet<Event> Events { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<List> Lists { get; set; }
+        public DbSet<Task> Tasks { get; set; }
+        public DbSet<Text>  Texts { get; set; }
     }
 }

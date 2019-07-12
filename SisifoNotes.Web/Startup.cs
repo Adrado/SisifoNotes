@@ -13,7 +13,14 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using SisifoNotes.Lib.Core.Interfaces;
+using SisifoNotes.Lib.DA.EFCore;
+using SisifoNotes.Lib.DA.EFCore.ModelsDbSets;
+using SisifoNotes.Lib.Models;
 using SisifoNotes.Web.Helpers;
+using SisifoNotes.Lib.DAL;
+using SisifoNotes.Lib.Core;
+using SisifoNotes.Lib.Server.Services;
 
 namespace SisifoNotes.Web
 {
@@ -37,7 +44,7 @@ namespace SisifoNotes.Web
             var appSettings = appSettingsSection.Get<AppSettings>();
 
             services.AddDbContext<SisifoNotesContext>(options => options.UseSqlServer(appSettings.DbConnection,
-                b => b.MigrationsAssembly("CrazyBooks.Web")));
+                b => b.MigrationsAssembly("SisifoNotes.Web")));
 
             InjectDependencies(services);
 
@@ -62,6 +69,21 @@ namespace SisifoNotes.Web
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+        }
+
+        public void InjectDependencies (IServiceCollection services)
+        {
+            // DbSets
+            services.AddScoped<IDbSet<Client>, ClientsDbSet>();
+            services.AddScoped<IDbSet<Note>, NotesDbSet>();
+
+            // Repositories
+            //services.AddScoped < IRepository<Client>, GenericRepository<Client>();
+            //services.AddScoped < IRepository<Note>, GenericRepository<Note>() >;
+
+            // Crud Services
+            services.AddScoped<ICrudService<Client>, GenericCrudService<Client>>();
+            services.AddScoped<ICrudService<Note>, GenericCrudService<Note>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

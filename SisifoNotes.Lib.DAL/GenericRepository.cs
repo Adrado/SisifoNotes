@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SisifoNotes.Lib.DAL
 {
-    public class GenericRepository <T> : IRepository<T> where T : Entity
+    public class GenericRepository<T> : IRepository<T> where T : Entity
     {
         public IDbSet<T> DbSet { get; set; }
         public GenericRepository(IDbSet<T> dbSet)

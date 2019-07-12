@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj": {}
+    "C:\\FDev\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj": {
+    "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DA.EFCore\\SisifoNotes.Lib.DA.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj",
-        "projectName": "SisifoNotes.Lib.Server.Services",
-        "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj",
+        "projectUniqueName": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DA.EFCore\\SisifoNotes.Lib.DA.EFCore.csproj",
+        "projectName": "SisifoNotes.Lib.DA.EFCore",
+        "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DA.EFCore\\SisifoNotes.Lib.DA.EFCore.csproj",
         "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\obj\\",
+        "outputPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DA.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -36,8 +36,140 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
-                "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj"
+              "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
+                "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj",
+        "projectName": "SisifoNotes.Lib.DAL",
+        "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj",
+        "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
+        "outputPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\A4ALUMNO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
+                "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj",
+        "projectName": "SisifoNotes.Lib.Server.Services",
+        "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj",
+        "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
+        "outputPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\A4ALUMNO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
+                "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj"
               }
             }
           }
@@ -66,14 +198,14 @@
         }
       }
     },
-    "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
+    "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj",
+        "projectUniqueName": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj",
         "projectName": "SisifoNotes.Lib",
-        "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj",
+        "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj",
         "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib\\obj\\",
+        "outputPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -114,10 +246,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.2, )"
             }
           },
           "imports": [
@@ -128,14 +256,14 @@
         }
       }
     },
-    "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj": {
+    "C:\\FDev\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj",
+        "projectUniqueName": "C:\\FDev\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj",
         "projectName": "SisifoNotes.Web",
-        "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj",
+        "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj",
         "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Web\\obj\\",
+        "outputPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -160,8 +288,17 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj": {
-                "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj"
+              "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DA.EFCore\\SisifoNotes.Lib.DA.EFCore.csproj": {
+                "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DA.EFCore\\SisifoNotes.Lib.DA.EFCore.csproj"
+              },
+              "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj": {
+                "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj"
+              },
+              "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj": {
+                "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj"
+              },
+              "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
+                "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj"
               }
             }
           }

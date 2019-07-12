@@ -4724,14 +4724,39 @@
       "SisifoNotes.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.2"
-        },
         "compile": {
           "bin/placeholder/SisifoNotes.Lib.dll": {}
         },
         "runtime": {
           "bin/placeholder/SisifoNotes.Lib.dll": {}
+        }
+      },
+      "SisifoNotes.Lib.DA.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.6",
+          "SisifoNotes.Lib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SisifoNotes.Lib.DA.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SisifoNotes.Lib.DA.EFCore.dll": {}
+        }
+      },
+      "SisifoNotes.Lib.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2",
+          "SisifoNotes.Lib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SisifoNotes.Lib.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SisifoNotes.Lib.DAL.dll": {}
         }
       },
       "SisifoNotes.Lib.Server.Services/1.0.0": {
@@ -12974,6 +12999,16 @@
       "path": "../SisifoNotes.Lib/SisifoNotes.Lib.csproj",
       "msbuildProject": "../SisifoNotes.Lib/SisifoNotes.Lib.csproj"
     },
+    "SisifoNotes.Lib.DA.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../SisifoNotes.Lib.DA.EFCore/SisifoNotes.Lib.DA.EFCore.csproj",
+      "msbuildProject": "../SisifoNotes.Lib.DA.EFCore/SisifoNotes.Lib.DA.EFCore.csproj"
+    },
+    "SisifoNotes.Lib.DAL/1.0.0": {
+      "type": "project",
+      "path": "../SisifoNotes.Lib.DAL/SisifoNotes.Lib.DAL.csproj",
+      "msbuildProject": "../SisifoNotes.Lib.DAL/SisifoNotes.Lib.DAL.csproj"
+    },
     "SisifoNotes.Lib.Server.Services/1.0.0": {
       "type": "project",
       "path": "../SisifoNotes.Lib.Server.Services/SisifoNotes.Lib.Server.Services.csproj",
@@ -12990,6 +13025,9 @@
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
       "Newtonsoft.Json >= 12.0.2",
+      "SisifoNotes.Lib >= 1.0.0",
+      "SisifoNotes.Lib.DA.EFCore >= 1.0.0",
+      "SisifoNotes.Lib.DAL >= 1.0.0",
       "SisifoNotes.Lib.Server.Services >= 1.0.0"
     ]
   },
@@ -13000,11 +13038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj",
+      "projectUniqueName": "C:\\FDev\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj",
       "projectName": "SisifoNotes.Web",
-      "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj",
+      "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Web\\SisifoNotes.Web.csproj",
       "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Web\\obj\\",
+      "outputPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13029,8 +13067,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj": {
-              "projectPath": "C:\\Dev\\PrácticaF\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj"
+            "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DA.EFCore\\SisifoNotes.Lib.DA.EFCore.csproj": {
+              "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DA.EFCore\\SisifoNotes.Lib.DA.EFCore.csproj"
+            },
+            "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj": {
+              "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.DAL\\SisifoNotes.Lib.DAL.csproj"
+            },
+            "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj": {
+              "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib.Server.Services\\SisifoNotes.Lib.Server.Services.csproj"
+            },
+            "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj": {
+              "projectPath": "C:\\FDev\\SisifoNotes\\SisifoNotes.Lib\\SisifoNotes.Lib.csproj"
             }
           }
         }

@@ -1,0 +1,23 @@
+﻿<style>
+   .Register
+   {
+       background: black;
+   }
+</style>
+<div class="View">
+    <div class="main-w3layouts wrapper">
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form name="MyForm">
+                    <input class="text" type="text" placeholder="Name" ng-model="vm.Name" required="">
+                    <input class="text" type="text" placeholder="Surname" ng-model="vm.FirstSurname" required="">
+                    <input class="text" type="text" placeholder="Surname" ng-model="vm.SecondSurname" required="">
+                    <input class="text" type="email" placeholder="Email" ng-model="vm.Email" required="">
+                    <input class="text" type="password" placeholder="Password" ng-model="vm.Password" required="">
+                    <input type="submit" value="Register" id="RegisterButton" class="submit" ng-click="vm.CheckForm(MyForm.$valid)" ng-show="!vm.IsEditing">
+                </form>
+                <button ng-click="vm.ChangeToLogin()">Sign In</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿<style>
+    .Menu
+    {
+        width: var(--menuWidth); 
+        height: 100%; 
+        background-color: black;    
+        margin: 0px;
+        padding:0;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+   .Header
+    {
+        width: calc(100% - var(--menuWidth));
+        height: var(--headerHeight); 
+        background-color: Black;
+        padding:0;
+        position: absolute;
+        left: var(--menuWidth);
+        top: 0px;
+    }
+
+   .Content
+    {
+        width: calc(100% - var(--menuWidth));
+        height: calc(100% - var(--headerHeight)); 
+        position: absolute;
+        top: var(--headerHeight);
+        left: var(--menuWidth);
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+   
+</style>
+
+
+<div>
+    <start class="MainContainer" ng-if="vm.IsStartVisible()"></start>
+    <home ng-if="vm.IsLogon()"></home>
+    <loading ng-if="vm.IsLoading()"></loading>
+</div>

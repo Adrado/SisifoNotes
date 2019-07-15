@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SisifoNotes.Lib.Core;
 using SisifoNotes.Lib.Models;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace SisifoNotes.Lib.DA.EFCore
 
         }
 
+        public DbSet<User> Users { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Note> Notes { get; set; }
         public DbSet<Event> Events { get; set; }

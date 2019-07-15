@@ -10,8 +10,8 @@ using SisifoNotes.Lib.DA.EFCore;
 namespace SisifoNotes.Web.Migrations
 {
     [DbContext(typeof(SisifoNotesContext))]
-    [Migration("20190712171524_A4")]
-    partial class A4
+    [Migration("20190715181130_A5")]
+    partial class A5
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,10 +21,13 @@ namespace SisifoNotes.Web.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SisifoNotes.Lib.Models.Client", b =>
+            modelBuilder.Entity("SisifoNotes.Lib.Core.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired();
 
                     b.Property<string>("Email");
 
@@ -40,7 +43,9 @@ namespace SisifoNotes.Web.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clients");
+                    b.ToTable("Users");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("User");
                 });
 
             modelBuilder.Entity("SisifoNotes.Lib.Models.Item", b =>
@@ -81,6 +86,13 @@ namespace SisifoNotes.Web.Migrations
                     b.HasDiscriminator<string>("Discriminator").HasValue("Note");
                 });
 
+            modelBuilder.Entity("SisifoNotes.Lib.Models.Client", b =>
+                {
+                    b.HasBaseType("SisifoNotes.Lib.Core.User");
+
+                    b.HasDiscriminator().HasValue("Client");
+                });
+
             modelBuilder.Entity("SisifoNotes.Lib.Models.Event", b =>
                 {
                     b.HasBaseType("SisifoNotes.Lib.Models.Note");
@@ -118,7 +130,7 @@ namespace SisifoNotes.Web.Migrations
                 {
                     b.HasBaseType("SisifoNotes.Lib.Models.Note");
 
-                    b.Property<string>("body");
+                    b.Property<string>("Body");
 
                     b.HasDiscriminator().HasValue("Text");
                 });

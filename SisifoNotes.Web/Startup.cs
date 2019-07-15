@@ -21,6 +21,9 @@ using SisifoNotes.Web.Helpers;
 using SisifoNotes.Lib.DAL;
 using SisifoNotes.Lib.Core;
 using SisifoNotes.Lib.Server.Services;
+using SisifoNotes.Lib.Services.Interfaces;
+using SisifoNotes.Web.Security;
+using SisifoNotes.Web.Controllers;
 
 namespace SisifoNotes.Web
 {
@@ -76,14 +79,21 @@ namespace SisifoNotes.Web
             // DbSets
             services.AddScoped<IDbSet<Client>, ClientsDbSet>();
             services.AddScoped<IDbSet<Note>, NotesDbSet>();
+            services.AddScoped<IDbSet<User>, UsersDbSet>();
 
             // Repositories
-            //services.AddScoped < IRepository<Client>, GenericRepository<Client>();
-            //services.AddScoped < IRepository<Note>, GenericRepository<Note>() >;
+            services.AddScoped < IRepository<Client>, GenericRepository<Client>>();
+            services.AddScoped < IRepository<Note>, GenericRepository<Note>>();
+            services.AddScoped <IRepository<User>, GenericRepository<User>>();
 
             // Crud Services
             services.AddScoped<ICrudService<Client>, GenericCrudService<Client>>();
             services.AddScoped<ICrudService<Note>, GenericCrudService<Note>>();
+            services.AddScoped<ICrudService<User>, GenericCrudService<User>>();
+
+            // Other Services
+
+            services.AddScoped<ILoginService, JwtLoginService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

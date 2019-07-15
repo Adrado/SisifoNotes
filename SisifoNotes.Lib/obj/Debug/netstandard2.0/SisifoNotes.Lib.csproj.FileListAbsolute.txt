@@ -18,6 +18,6 @@ C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.Ass
 C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.csproj.CopyComplete
 C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.dll
 C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.pdb
-C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.csprojAssemblyReference.cache
 C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
 C:\FDev\SisifoNotes\SisifoNotes.Lib\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\FDev\SisifoNotes\SisifoNotes.Lib\obj\Debug\netstandard2.0\SisifoNotes.Lib.csprojAssemblyReference.cache

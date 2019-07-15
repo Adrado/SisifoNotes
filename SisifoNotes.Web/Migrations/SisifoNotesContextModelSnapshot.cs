@@ -19,10 +19,13 @@ namespace SisifoNotes.Web.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SisifoNotes.Lib.Models.Client", b =>
+            modelBuilder.Entity("SisifoNotes.Lib.Core.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired();
 
                     b.Property<string>("Email");
 
@@ -38,7 +41,9 @@ namespace SisifoNotes.Web.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clients");
+                    b.ToTable("Users");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("User");
                 });
 
             modelBuilder.Entity("SisifoNotes.Lib.Models.Item", b =>
@@ -77,6 +82,13 @@ namespace SisifoNotes.Web.Migrations
                     b.ToTable("Notes");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Note");
+                });
+
+            modelBuilder.Entity("SisifoNotes.Lib.Models.Client", b =>
+                {
+                    b.HasBaseType("SisifoNotes.Lib.Core.User");
+
+                    b.HasDiscriminator().HasValue("Client");
                 });
 
             modelBuilder.Entity("SisifoNotes.Lib.Models.Event", b =>

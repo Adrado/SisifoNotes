@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SisifoNotes.Web.Migrations
 {
-    public partial class A4 : Migration
+    public partial class A5 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Clients",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -18,11 +18,12 @@ namespace SisifoNotes.Web.Migrations
                     SecondSurname = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
                     Password = table.Column<string>(nullable: true),
-                    Token = table.Column<string>(nullable: true)
+                    Token = table.Column<string>(nullable: true),
+                    Discriminator = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clients", x => x.Id);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -39,15 +40,15 @@ namespace SisifoNotes.Web.Migrations
                     Description = table.Column<string>(nullable: true),
                     Priority = table.Column<int>(nullable: true),
                     Deadline = table.Column<DateTime>(nullable: true),
-                    body = table.Column<string>(nullable: true)
+                    Body = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Notes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Notes_Clients_ClientId",
+                        name: "FK_Notes_Users_ClientId",
                         column: x => x.ClientId,
-                        principalTable: "Clients",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -92,7 +93,7 @@ namespace SisifoNotes.Web.Migrations
                 name: "Notes");
 
             migrationBuilder.DropTable(
-                name: "Clients");
+                name: "Users");
         }
     }
 }

@@ -93,6 +93,7 @@ namespace SisifoNotes.Web
 
             // Other Services
 
+            services.AddScoped<IRegisterService, RegisterService>();
             services.AddScoped<ILoginService, JwtLoginService>();
         }
 

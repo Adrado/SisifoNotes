@@ -1,31 +1,33 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SisifoNotes.Lib.Core;
+using SisifoNotes.Lib.Models;
 using SisifoNotes.Lib.Services.Dtos;
 using SisifoNotes.Lib.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Task = System.Threading.Tasks.Task;
 
 namespace SisifoNotes.Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LoginController : ControllerBase
+    public class RegisterController : ControllerBase
     {
-        ILoginService _loginService { get; set; }
+        IRegisterService _registerService { get; set; }
 
-        public LoginController(ILoginService loginService)
+        public RegisterController (IRegisterService registerService)
         {
-            _loginService = loginService;
+            _registerService = registerService;
         }
 
         [HttpPost]
-        public async Task<User> Post([FromBody] LoginRequest loginRequest)
+        public async Task<RegisterResponse> Post([FromBody] RegisterRequest registerRequest)
         {
             return await Task.Run(() =>
             {
-                return _loginService.Authenticate(loginRequest);
+                return _registerService.Register(registerRequest);
             });
         }
     }

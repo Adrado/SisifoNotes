@@ -6,14 +6,16 @@
         if (json)
         {
             this.Name = json.name;
-            this.Surname = json.surname;
+            this.FirstSurname = json.firstSurname;
+            this.SecondSurname = json.secondSurname;
             this.Email = json.email;
             this.Password = json.password;
         }
         else
         {
             this.Name = "";
-            this.Surname = "";
+            this.FirstSurname = "";
+            this.SecondSurname = "";
             this.Email = "";
             this.Password = "";
         }

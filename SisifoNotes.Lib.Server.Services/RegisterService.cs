@@ -50,8 +50,12 @@ namespace SisifoNotes.Lib.Server.Services
             {
                 client = new Client
                 {
+                    Name = registerRequest.Name,
+                    FirstSurname = registerRequest.FirstSurname,
+                    SecondSurname = registerRequest.SecondSurname,
                     Email = registerRequest.Email,
                     Password = registerRequest.Password
+
                 };
 
                 ClientsRepository.Add(client);

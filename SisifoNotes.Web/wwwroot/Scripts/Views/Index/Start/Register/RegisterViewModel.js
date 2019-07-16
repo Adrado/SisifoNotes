@@ -1,8 +1,9 @@
 ﻿class RegisterViewModel
 {
-    constructor($window)
+    constructor($window, $RegisterService)
     {
         this.Window = $window;
+        this.RegisterService = $RegisterService;
     }
 
     ChangeToLogin()
@@ -16,28 +17,40 @@
         }
     }
 
-    Register() {
+    Register()
+    {
         let client = new Client();
         client.Name = this.Name;
-        client.Surname = this.Surname;
+        client.FirstSurname = this.FirstSurname;
+        client.SecondSurname = this.SecondSurname;
         client.Email = this.Email;
         client.Password = this.Password;
         this.SetData(client);
+        this.Clean();
     }
 
-    SetData(client) {
-        this.ClientsService.AddAsync(client)
-            .then((response) => {
-                this.OnSuccesAdd(response);
+    SetData(client)
+    {
+        this.RegisterService.Register(client)
+            .then((response) =>
+            {
+                console.log(response);
+                this.Window.Token = response.data.client.token;
+                this.Window.LogonUser = true;
+                this.Window.IsLoading = false;
             },
                 response => console.log(response)
             );
     }
 
-    OnSuccesAdd(response) {
-        let client = new Client(response.data)
-        this.Clients.push(client);
-        this.Clean();
+    Clean()
+    {
+        this.Name = "";
+        this.FirstSurname = "";
+        this.SecondSurname = "";
+        this.Email = "";
+        this.Password = "";
+        this.Address = "";
     }
 }
 

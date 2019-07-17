@@ -3,7 +3,7 @@
 </style>
 
 <nav id="sidebar" class="" >
-    <div class="sidebar-header" ng-init="vm.ShowView('purchases')">
+    <div class="sidebar-header" ng-init="vm.ShowView('events')">
         <h2>Menu</h2>
     </div>
     <ul class="list-unstyled components">
@@ -11,7 +11,7 @@
             <a ng-click="vm.ShowView('purchases')">Purchases</a>
         </li>
         <li>
-            <a ng-click="vm.ShowView('clients')" ng-if="vm.IsEmployee">Clients</a>
+            <a ng-click="vm.ShowView('events')">Events</a>
         </li>
         <li>
             <a ng-click="vm.ShowView('employees')" ng-if="vm.IsEmployee">Employees</a>

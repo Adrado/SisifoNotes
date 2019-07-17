@@ -7,9 +7,9 @@ app.config(function ($routeProvider, $locationProvider)
             template: '<employees></employees>'
         });
 
-    $routeProvider.when('/clients',
+    $routeProvider.when('/events',
         {
-            template: '<clients></clients>'
+            template: '<events></events>'
         });
 
     $routeProvider.when('/products',

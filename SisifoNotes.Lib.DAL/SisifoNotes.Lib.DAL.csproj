@@ -12,4 +12,8 @@
     <ProjectReference Include="..\SisifoNotes.Lib\SisifoNotes.Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>

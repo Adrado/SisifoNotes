@@ -10,8 +10,8 @@ using SisifoNotes.Lib.DA.EFCore;
 namespace SisifoNotes.Web.Migrations
 {
     [DbContext(typeof(SisifoNotesContext))]
-    [Migration("20190715181130_A5")]
-    partial class A5
+    [Migration("20190717161319_A61")]
+    partial class A61
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -70,7 +70,7 @@ namespace SisifoNotes.Web.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<Guid?>("ClientId");
+                    b.Property<Guid>("ClientId");
 
                     b.Property<string>("Discriminator")
                         .IsRequired();
@@ -146,7 +146,8 @@ namespace SisifoNotes.Web.Migrations
                 {
                     b.HasOne("SisifoNotes.Lib.Models.Client")
                         .WithMany("Notes")
-                        .HasForeignKey("ClientId");
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

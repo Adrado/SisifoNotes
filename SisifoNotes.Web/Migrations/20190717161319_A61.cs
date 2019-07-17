@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SisifoNotes.Web.Migrations
 {
-    public partial class A5 : Migration
+    public partial class A61 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -32,7 +32,7 @@ namespace SisifoNotes.Web.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     Title = table.Column<string>(nullable: true),
-                    ClientId = table.Column<Guid>(nullable: true),
+                    ClientId = table.Column<Guid>(nullable: false),
                     Discriminator = table.Column<string>(nullable: false),
                     DateInit = table.Column<DateTime>(nullable: true),
                     DateFinish = table.Column<DateTime>(nullable: true),
@@ -50,7 +50,7 @@ namespace SisifoNotes.Web.Migrations
                         column: x => x.ClientId,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

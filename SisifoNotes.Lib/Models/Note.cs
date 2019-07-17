@@ -8,5 +8,6 @@ namespace SisifoNotes.Lib.Models
     public class Note : Entity
     {
         public string Title { get; set; }
+        public Guid ClientId { get; set; }
     }
 }

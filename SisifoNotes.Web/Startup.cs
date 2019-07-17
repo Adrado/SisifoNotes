@@ -25,6 +25,7 @@ using SisifoNotes.Lib.Services.Interfaces;
 using SisifoNotes.Web.Security;
 using SisifoNotes.Web.Controllers;
 
+
 namespace SisifoNotes.Web
 {
     public class Startup
@@ -80,16 +81,19 @@ namespace SisifoNotes.Web
             services.AddScoped<IDbSet<Client>, ClientsDbSet>();
             services.AddScoped<IDbSet<Note>, NotesDbSet>();
             services.AddScoped<IDbSet<User>, UsersDbSet>();
+            services.AddScoped<IDbSet<Event>, EventsDbSet>();
 
             // Repositories
-            services.AddScoped < IRepository<Client>, GenericRepository<Client>>();
-            services.AddScoped < IRepository<Note>, GenericRepository<Note>>();
-            services.AddScoped <IRepository<User>, GenericRepository<User>>();
+            services.AddScoped<IRepository<Client>, GenericRepository<Client>>();
+            services.AddScoped<IRepository<Note>, GenericRepository<Note>>();
+            services.AddScoped<IRepository<User>, GenericRepository<User>>();
+            services.AddScoped<IRepository<Event>, GenericRepository<Event>>();
 
             // Crud Services
             services.AddScoped<ICrudService<Client>, GenericCrudService<Client>>();
             services.AddScoped<ICrudService<Note>, GenericCrudService<Note>>();
             services.AddScoped<ICrudService<User>, GenericCrudService<User>>();
+            services.AddScoped<ICrudService<Event>, GenericCrudService<Event>>();
 
             // Other Services
 

@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using SisifoNotes.Lib.Core.Interfaces;
 using SisifoNotes.Lib.DA.EFCore;
 using SisifoNotes.Lib.Models;
+using Task = System.Threading.Tasks.Task;
 
 namespace SisifoNotes.Web.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class EventsController : ControllerBase
@@ -22,6 +24,7 @@ namespace SisifoNotes.Web.Controllers
             _eventsService = eventsService;
         }
 
+
         // GET: api/Events
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Event>>> GetEvents()
@@ -31,78 +34,39 @@ namespace SisifoNotes.Web.Controllers
 
         // GET: api/Events/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Event>> GetEvent(Guid id)
+        public async Task<ActionResult<IEnumerable<Event>>> GetEvent(Guid id)
+        {
+            return await _eventsService.GetAll().Where(x => x.ClientId == id).ToListAsync();
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<Event>> PutEvent(Event @event)
         {
             return await Task.Run(() =>
             {
-                var client = _clientsService.GetAll().FirstOrDefault(x => x.Id = id);
-                if (client == null)
-                {
-                    return NotFound();
-                }
-                return new ActionResult<Client>(client);
+                var output = _eventsService.Update(@event);
+                return new ActionResult<Event>(output);
             });
         }
 
-        // PUT: api/Events/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutEvent(Guid id, Event event)
-        {
-            if (id != @event.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(@event).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!EventExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Events
         [HttpPost]
-        public async Task<ActionResult<Event>> PostEvent(Event @event)
+        public async Task<ActionResult<Event>> PostClient(Event @event)
         {
-            _context.Events.Add(@event);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetEvent", new { id = @event.Id }, @event);
-        }
-
-        // DELETE: api/Events/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<Event>> DeleteEvent(Guid id)
-        {
-            var @event = await _context.Events.FindAsync(id);
-            if (@event == null)
+            return await Task.Run(() =>
             {
-                return NotFound();
-            }
-
-            _context.Events.Remove(@event);
-            await _context.SaveChangesAsync();
-
-            return @event;
+                var output = _eventsService.Add(@event);
+                return new ActionResult<Event>(output);
+            });
         }
 
-        private bool EventExists(Guid id)
+        // DELETE: api/Clients/5
+        [HttpDelete("{id}")]
+        public async Task<bool> DeleteClient(Guid id)
         {
-            return _context.Events.Any(e => e.Id == id);
+            return await Task.Run(() =>
+            {
+                return _eventsService.Delete(id);
+            });
         }
     }
 }

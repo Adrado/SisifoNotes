@@ -12,8 +12,8 @@
         <div class="main-agileinfo">
             <div class="agileits-top">
                 <form name="MyForm">
-                    <input class="text" type="text" ng-model="vm.Email" placeholder="Correo" required>
-                    <input class="text" type="password" ng-model="vm.Password" placeholder="Password" required>
+                    <input class="text" type="text" ng-model="vm.Email" placeholder="Correo" value="f@f" required>
+                    <input class="text" type="password" ng-model="vm.Password" placeholder="Password" value="1234" required>
                     <input type="submit" value="Enter" id="AddButton2" class="submit" ng-click="vm.CheckFormLogin(MyForm.$valid)" ng-show="!vm.IsEditing">
                 </form>
                 <button ng-click="vm.ChangeToRegister()">Sign Up</button>

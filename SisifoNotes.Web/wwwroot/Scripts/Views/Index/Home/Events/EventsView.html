@@ -1,7 +1,110 @@
 ﻿<style>
 
+/*body {
+  background: #13756D;
+}*/
+
+.event-wrapper {
+  background: #55B6AE;
+  width: 100%;
+}
+
+/*h2 {
+  font-size: 2em;
+  
+  font-family: megrim, fantasy;
+  background: #1CA89C;
+  padding: 40px;
+  margin: 0;
+  color: #333;
+  text-align: center;
+ }*/
+.emphasis {
+  font-family: vast-shadow, sans-serif;
+  font-size: 4em;
+}
+
+.event-wrapper ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.event-wrapper li {
+  font-family: megrim, fantasy;
+  font-size: 2em;
+  padding: 40px;
+  
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#833ab4), to(#fcb045));
+  background: -webkit-linear-gradient(#833ab4 0%, #fcb045 100%);
+  background: -moz-linear-gradient(#833ab4 0%, #fcb045 100%);
+  background: -o-linear-gradient(#833ab4 0%, #fcb045 100%);
+  background: linear-gradient(#833ab4 0%, #fcb045 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#833ab4', endColorstr='#fcb045',GradientType=0 );
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+li input[type="checkbox"] {
+  width: 40px;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: #ddd;
+}
+
+.add-input {
+  width: 60%;
+  height: 20px;
+  float: left;
+  border: none;
+  padding: 40px 0;
+  font-size: 2em;
+  font-family: megrim, fantasy;
+  text-indent: 55px;
+}
+.add-btn {
+        width: 40%;
+        border: none;
+        background: #29F4E3;
+        padding: 0;
+        height: 100px;
+ }
+  /*h2 {
+   background: #29F4E3;
+   padding: 0;
+   font-size: 2em;
+   font-family: megrim, fantasy;
+   color: #333;
+  }*/
+
+
+.clear-btn {
+  width: 100%;
+  border: none;
+  height: 100px;
+  background: #13756D;
+  font-size: 2em;
+  font-family: megrim, fantasy;
+  color: #aaa;
+}
+
+button{
+    font-family: megrim, fantasy;
+    
+}
 </style>
 
 <div class="View">
-    
+    <div class="event-wrapper">
+        <ul>
+            <li ng-repeat="event in vm.Events">
+                <input type="checkbox" ng-model="event.done" />
+                <span class="done-{{event.done}}">{{event.text}}</span>
+            </li>
+        </ul>
+    </div>
+    <input class="add-input" placeholder="I need to..." type="text" ng-model="vm.FormEventText" ng-model-instant />
+    <button class="add-btn" ng-click="vm.AddEvent()"> Add </button>
 </div>

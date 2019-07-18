@@ -33,12 +33,12 @@
     Put(entity)
     {
         let urlID = this.Url + entity.Id;
-        return this.Http.put(urlID, entity, this.Config);
+        return this.Http.put(this.Url, entity, this.Config);
     }
 
     Delete(entity)
     {
         let urlID = this.Url + entity.Id;
-        return this.Http.delete(urlID);
+        return this.Http.delete(this.Url);
     }
 }

@@ -82,7 +82,7 @@
 
     OnSuccesAdd(response)
     {
-        let client = new Client(response.data)
+        let client = new Client(response.data);
         this.Clients.push(client);
         this.Clean();
     }

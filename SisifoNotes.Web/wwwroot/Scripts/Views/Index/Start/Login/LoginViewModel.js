@@ -26,6 +26,7 @@
                 this.Window.Token = response.data.token;
                 this.Window.LogonUser = true;
                 this.Window.IsLoading = false;
+                this.Window.ClientId = response.data.id;
                 console.log(response);
             },
             (error) =>

@@ -7,10 +7,11 @@
             <div class="agileits-top">
                 <form name="MyForm">
                     <input class="text" type="text" placeholder="Name" ng-model="vm.Name" required="">
-                    <input class="text" type="text" placeholder="Surname" ng-model="vm.Surname" required="">
+                    <input class="text" type="text" placeholder="FirstSurname" ng-model="vm.FirstSurname" required="">
+                    <input class="text" type="text" placeholder="SecondSurname" ng-model="vm.SecondSurname" required="">
                     <input class="text" type="email" placeholder="Email" ng-model="vm.Email" required="">
                     <input class="text" type="password" placeholder="Password" ng-model="vm.Password" required="">
-                    <input class="text" type="text" placeholder="Address" ng-model="vm.Address" required="">
+
                     <input type="submit" value="Add" id="AddButton" class="submit" ng-click="vm.CheckFormAdd(MyForm.$valid)" ng-show="!vm.IsEditing">
                     <input type="submit" value="Save" id="SaveButton" ng-click="vm.CheckFormSave(MyForm.$valid)" ng-show="vm.IsEditing">
                 </form>

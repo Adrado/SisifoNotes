@@ -39,6 +39,6 @@
     Delete(entity)
     {
         let urlID = this.Url + entity.Id;
-        return this.Http.delete(this.Url);
+        return this.Http.delete(urlID);
     }
 }

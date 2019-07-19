@@ -35,16 +35,21 @@
 
     GetAllEvents()
     {
+       
         this.EventsService.GetAllAsync()
             .then((response) =>
             {
+                alert("1");
                 this.OnGetData(response);
-            })
+            },
+                response => console.log(response)
+            );
     }
 
     OnGetData(response)
     {
         console.log(response);
+        alert("Response?");
         this.Events.length = 0;
         for (let i in response.data)
         {

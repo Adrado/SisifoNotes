@@ -22,9 +22,9 @@
                 appScopeProvider: this,
                 columnDefs: [
                     { name: 'Name', field: 'Name' },
-                    { name: 'Surname', field: 'Surname' },
+                    { name: 'FirstSurname', field: 'FirstSurname' },
+                    { name: 'SecondSurname', field: 'SecondSurname' },
                     { name: 'Email', field: 'Email' },
-                    { name: 'Address', field: 'Address' },
                     { name: '', field: 'Id', cellTemplate: '<input type="button" value="Edit" ng-click="grid.appScope.Select(row.entity)">' },
                     { name: ' ', field: 'Id', cellTemplate: '<input type="button" value="Remove" ng-click="grid.appScope.RemoveClient(row.entity)">' }
                 ]
@@ -62,10 +62,11 @@
     {
         let client = new Client();
         client.Name = this.Name;
-        client.Surname = this.Surname;
+        client.FirstSurname = this.FirstSurname;
+        client.SecondSurname = this.SecondSurname;
         client.Email = this.Email;
         client.Password = this.Password;
-        client.Address = this.Address;
+        
         this.SetData(client);
     }
 
@@ -90,20 +91,20 @@
     Clean()
     {
         this.Name = "";
-        this.Surname = "";
+        this.FirstSurname = "";
         this.Email = "";
         this.Password = "";
-        this.Address = "";
+        this.SecondSurname = "";
     }
 
     Select(client)
     {
         this.SelectedClient = client;
         this.Name = client.Name;
-        this.Surname = client.Surname;
+        this.FirstSurname = client.FirstSurname;
         this.Email = client.Email;
         this.Password = client.Password;
-        this.Address = client.Address;
+        this.SecondSurname = client.SecondSurname;
         this.IsEditing = true;
     }
 
@@ -118,10 +119,10 @@
     SaveSelectedClient()
     {
         this.SelectedClient.Name = this.Name;
-        this.SelectedClient.Surname = this.Surname;
+        this.SelectedClient.FirstSurname = this.FirstSurname;
         this.SelectedClient.Email = this.Email;
         this.SelectedClient.Password = this.Password;
-        this.SelectedClient.Address = this.Address;
+        this.SelectedClient.SecondSurname = this.SecondSurname;
 
         this.SaveEditClient();
 
